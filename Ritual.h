@@ -4,15 +4,17 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-//#include "Card.h"
+#include "Cards.h"
 #include "Minion.h"
 #include "Ability.h"
 
-class Rituals: public Cards {
+class Ritual: public Card {
     Ability *triggeredAbility;
   public:
-    Rituals(Ability *ability);
+    Ritual(Ability *ability);
+    ~Ritual();
     void performAbility(Minions *minion);
+    void addToBoard(Card *ritualSlot, Card *MinionCardForEnch, Slot *slot) override;
 };
 
 #endif
