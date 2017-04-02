@@ -11,3 +11,6 @@ class Card {
 	  virtual ~Card();
 	  virtual void addToBoard(Card *ritualSlot, Card *MinionCardForEnch, Slot *slot) = 0;
 };
+
+
+FUCK THIS SHIT
